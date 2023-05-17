@@ -1,0 +1,61 @@
+
+#mysvg{
+    width: 100%;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . game_name game_name game_name . ."
+      ". game_screen game_screen game_screen game_screen game_screen ."
+      ". . . game_button . . ."
+      ". game_instruction game_instruction game_instruction game_instruction game_instruction .";
+  }
+  
+  .game_screen { 
+    grid-area: game_screen;
+}
+  
+  .game_name { 
+    grid-area: game_name;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background-image: linear-gradient(to left, #235b19, #96d86a);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    line-height: 44px;
+ }
+  
+  .game_button { 
+    grid-area: game_button;
+ }
+  
+  .game_instruction { 
+    grid-area: game_instruction; 
+    font-family: arial;
+    font-size: 15px;
+    color: #111;
+    line-height: 24px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .game_instruction{
+      display: grid; 
+      grid-template-columns: 3fr 1fr; 
+      grid-template-rows: 1fr; 
+      gap: 0px 10px; 
+      grid-template-areas: 
+        ". ."; 
+    }
+    .img-project {
+      width: 100%;
+      margin-top: 68px;
+  }
+}
+
+  

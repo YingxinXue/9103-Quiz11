@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>IDEA9103: Week 11</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Quiz11.css" />
+    <style>
+        h1 {text-align: center;}
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            width: 100%;
+        }
+        
+        .button:hover {background-color: #3e8e41}
+        
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="game_button">
+            <button class="button" id="button">Generate</button>
+        </div>
+        <div class="game_instruction">
+            <article class="project">
+                <h2>Project Explaination</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel
+                  urna luctus, mollis ante placerat, accumsan metus. Donec lorem ante,
+                  cursus vel lorem consequat, varius mollis eros. Sed ex erat, interdum
+                  ac euismod vitae, molestie id lorem. Proin tempor fermentum leo quis
+                  sollicitudin. Mauris elit ligula, fermentum in enim a, aliquet sodales
+                  odio.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel
+                  urna luctus, mollis ante placerat, accumsan metus. Donec lorem ante,
+                  cursus vel lorem consequat, varius mollis eros. Sed ex erat, interdum
+                  ac euismod vitae, molestie id lorem. Proin tempor fermentum leo quis
+                  sollicitudin. Mauris elit ligula, fermentum in enim a, aliquet sodales
+                  odio.
+                </p>
+              </article>
+              <img
+                class="img-project"
+                src="helloworld.png"
+                alt="project-pic"
+              />
+        </div>
+        <div class="game_name">
+            <h1>Project Name</h1>
+        </div>
+        <div class="game_screen">
+            <svg id="mysvg"></svg>
+        </div>
+    </div>
+    <script src="Quiz11.js"></script>
+  </body>
+</html>
+
+
